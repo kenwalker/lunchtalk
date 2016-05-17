@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Cloud Development Goes Lightweight</title>
+		<title>Lunchtime Talk on Orion</title>
 
 		<meta name="description" content="The Orion Project">
 		<meta name="author" content="Ken Walker">
@@ -38,18 +38,15 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h3>Cloud Development goes Lightweight</h3>
-					<h4>The Open Source Orion Project</h4>
-					<h4>JAXConf US - Jun, 2013</h4>
+					<h3>Orion - yet another Web IDE</h3>
+					<h4>KX Labs - May, 2016</h4>
 					<br>
 					<a class="image">
-							<img src="images/JAXLogo1.png" ></a>
+							<img src="images/kx-logo.jpg" ></a>
 					<br>
 					<p>
-						<a href="http://kenwalker.github.io/">kenwalker.github.io</a> / <a href="http://twitter.com/kwalker">@kwalker</a> / <a href="http://twitter.com/orionhub">@orionhub</a>
+						<a href="http://kenwalker.github.io/">kenwalker.github.io</a> / <a href="http://twitter.com/kwalker">@kwalker</a></a>
 						<br>
-						<h4>Orion Project Lead</h4>
-						<br><i><a href="https://orionhub.org/git/git-repository.html#,createProject.name=JAXConfUS2013,cloneGit=git://github.com/kenwalker/JAXConfUS2013.git">Start editing this talk at OrionHub.org</a></i>					
 					</p>					
 				</section>
 
@@ -57,7 +54,7 @@
 				<h3>In the beginning...</h3>
 				<p>Inside IBM Orion was started by some of the Eclipse Team members from SWT & the Platform team</p>
 				<p>The goal was to begin working on a platform to support the growing initiatives for Cloud</p>
-				<p>As IBM is a founder of Eclipse, we wanted to leverage our experiences, investment, and the governance model</p>
+				<p>As IBM is a founder of Eclipse, then wanted to leverage their experiences, investment, and the governance model</p>
 				<p>IBM made the initial contribution of Orion components in January, 2011</p>
 				</section>
 
@@ -67,16 +64,15 @@
 				<p>Shift to Web based application development/delivery</p>
 				<p>Replace complex IDE pages with Web workflows</p>
 				<p>Provide the pieces as a whole or consumable by Web teams in product (IBM and others)</p>
-				<p>Orion is an onramp for IBM teams & Community</p>
+				<p>Orion was an onramp for IBM teams & Community</p>
 				</section>
 
 				<section>
 				<h3>Are developers really moving to the cloud?</h3>
-				<p>The rise of products like Cloud9 & CodeEnvy indicate there is a desire
-				for hosted development solutions</p>
-				<p>Progression to other CloudBased tools, Gmail, Dropbox, GitHub, Ohloh, CloudFoundry, AmazonWebServices</p>
+				<p>It's an uphill battle and only realistic for some workflows</p>
+				<p>Microsoft, Cloud9, CodeAnywhere, lately CodeEnvy (Che at Eclipse)</p>
 				<blockquote>Developers are still skeptical of online tools but understand the complex nature of IDE setup has to change</blockquote>
-				</p>
+				<p>Virtual sandboxes also benefit well from online IDEs</p>
 				</section>
 
 				<section>
@@ -93,19 +89,11 @@
 				<section>
 					<section>
 						<h3>Clone a repository</h3>
-						<img width="1157" height="796" src="images/OrionCloneApp.png" alt="Down arrow"></img>
+						<img width="1157" height="796" src="images/analyst-repo.png" alt="Down arrow"></img>
 					</section>
 					<section>
 						<h3>Edit your application</h3>
-						<img width="1157" height="796" src="images/OrionCodeApp.png" alt="Down arrow"></img>
-					</section>
-					<section>
-						<h3>Test it live</h3>
-						<img width="1157" height="796" src="images/OrionTestApp.png" alt="Down arrow"></img>
-					</section>
-					<section>
-						<h3>Check changes in</h3>
-						<img width="1157" height="796" src="images/OrionStageApp.png" alt="Down arrow"></img>
+						<img width="1157" height="796" src="images/analyst-edit.png" alt="Down arrow"></img>
 					</section>
 				</section>
 
@@ -131,10 +119,6 @@
 				<p>JavaScript implementation of OSGi Services API</p>
 				<p>Uses Promises for return types and follows the Lifecycle and Bundle State semantics used for Plugins</p>
 				<p>Implementation of Configuration Admin and Metatype for Plugin Settings and Schema</p>
-				<blockquote>
-					OSGI seems like overengineered Java stuff.  I'm generally pretty skeptical of big frameworks that do everything for everyone.  Usually they're a big pain.
-				</blockquote>
-				<p><i>-Isaac Schlueter</i></p>
 				</section>
 
 				<section>
@@ -142,55 +126,6 @@
 					<p>You provide html, javascript elements, from your site</p>
 					<p>In this case served up from a GitHub account</p>
 					<img src="images/JSBeautifyDiagram.png" alt="JSBeautifyPlugin"></img>
-				</section>
-
-				<section>
-					<h3>So how is Orion being utilized?</h3>
-				</section>
-
-				<section>
-					<h3>Mozilla thru Firefox integration</h3>
-					<p>Embedded in the debugger and scratchpad</p>
-					<a href="images/FirefoxOrion.png"><img width="800" height="500" src="images/FirefoxOrion.png" alt="IBM JazzHub Cloud"></img></a>
-				</section>
-
-				<section>
-					<h3>Hewlett Packard</h3>
-					<p><i>HP DevAnywhere, the entire software development lifecycle in the cloud</i></p>
-					<p>Node.js Orion server including editor, plugins, extensions</p>
-					<a href="images/CodeAnywhere2.png"><img width="700" height="450" src="images/CodeAnywhere2.png" alt="HP CodeAnywhere"></img></a>
-				</section>
-
-				<section>
-					<h3>VMWare/Pivotal Scripted Editor</h3>
-					<p>Desktop editor only (<i>like Adobe Brackets</i>)</p>
-					<p><i>scr</i> [filename] - improved content assist through introspection supporting AMD loading</p>
-					<a href="images/Scripted.png"><img width="800" height="500" src="images/Scripted.png" alt="VMWare/Pivotal Scripted Editor"></img></a>
-				</section>
-
-				<section>
-					<section>
-						<h3>IBM JazzHub & BlueMix</h3>
-						<p>Cloud ALM solution supporting hosted SCM and Deployment</p>
-						<a href="images/JazzHubCoding.png"><img width="800" height="500" src="images/JazzHubCoding.png" alt="IBM JazzHub Cloud"></img></a>
-					</section>
-					<section>
-						<h3>IBM JazzHub - Work items</h3>
-						<p>IBM Cloud ALM solution supporting Jazz SCM and GitHub</p>
-						<a href="images/JazzHubAssociateWorkItem.png"><img width="800" height="500" src="images/JazzHubAssociateWorkItem.png" alt="IBM JazzHub Cloud"></img></a>						
-					</section>
-				</section>
-
-				<section>
-					<h3>IBM RD Traveler</h3>
-					<p>z/OS Cloud based cobol development anywhere</p>
-					<a href="images/RDTraveler.png"><img width="800" height="500" src="images/RDTraveler.png" alt="IBM RD Traveler"></img></a>
-				</section>
-
-				<section>
-					<h3>Cloudfier.com</h3>
-					<p>Business centric solution for Cloud apps</p>
-					<a href="images/Cloudfier.png"><img width="800" height="500" src="images/Cloudfier.png" alt="IBM RD Traveler"></img></a>
 				</section>
 
 				<section>
@@ -243,7 +178,7 @@ app.listen(3000);
 				
 				<section>
 				<h3>Orion Node.js Server</h3>	
-				<p>Also available as a <a href="http://wiki.eclipse.org/Orion/Node/Getting_started">Node.js</a> based application, with less functionality, 
+				<p>Also available as a <a href="http://wiki.eclipse.org/Orion/Node/Getting_started">Node.js</a> based application, with slightly less functionality, 
 				but full editor, search capabilities, node start/stop/debug and npm commands</p>
 				<p>Very portable and great performance</p>
 				<p>Deploy anywhere Node is installed</p>
